@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TIMELORA</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/amazon-ember"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar row">
+      <div class="col-12 col-md-3">
+        <div class="navbar-brand">
+          <img width="150px" src="./images/logo.png" />
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mt-2 mt-md-0">
+        <div class="input-group">
+          <input
+            type="text"
+            id="search_field"
+            class="form-control"
+            placeholder="Enter Product Name ..."
+          />
+          <div class="input-group-append">
+            <button id="search_btn" class="btn">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-3 mt-4 mt-md-0 text-center">
+        <span id="cart" class="ml-3">Cart</span>
+        <span class="ml-1" id="cart_count">2</span>
+      </div>
+    </nav>
+
+    <h1 id="products_heading">Latest Products</h1>
+
+    <section id="products" class="container mt-5">
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src=".public/images/p1.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">OPPO F21s Pro 5G is a premium smartphone with a stylish design.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$245.67</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p2.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Apple iPhone 13 with A15 Bionic chip, 6.1-inch display.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$799.99</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p3.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Samsung Galaxy S21 with a stunning 120Hz AMOLED display.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$749.99</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p4.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">OnePlus 9 Pro with Snapdragon 888 and Hasselblad camera.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$999.99</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p5.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Google Pixel 6 with Tensor processor and advanced camera features.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$599.00</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p6.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Xiaomi Mi 11 with AMOLED display and Snapdragon 888 chipset.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$699.99</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p7.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Realme GT 5G with Snapdragon 870 and 120Hz AMOLED display.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$499.99</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p8.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Motorola Edge 20 with 108MP camera and 144Hz OLED display.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$649.00</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p9.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Vivo V21 5G with 44MP selfie camera and 90Hz AMOLED display.</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$399.99</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="col-sm-12 col-md-6 col-lg-3 my-3">
+          <div class="card p-3 rounded">
+            <img
+              class="card-img-top mx-auto"
+              src="./images/p10.jpg"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                <a href="#">Nokia 8.3 5G with 64MP camera and Snapdragon 765G chipset</a>
+              </h5>
+              <div class="ratings mt-auto">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+                <span id="no_of_reviews">(5 Reviews)</span>
+              </div>
+              <p class="card-text">$449.00</p>
+              <a href="#" id="view_btn" class="btn btn-block">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-1 bg-dark">
+      <p class="text-center text-white mt-1 ">TIMELORA - 2023-2024, All Rights Reserved</p>
+    </footer>
+
+    <script type="text/javascript">
+      const stars = 5;
+      const rating = 4.5;
+
+      const starPercentage = `${(rating / stars) * 100}%`;
+
+      document.querySelector(`.rating-inner`).style.width = starPercentage; 
+    </script>
+  </body>
+</html>

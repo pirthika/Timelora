@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/amazon-ember"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <div class="container container-fluid">
+        <div class="row f-flex justify-content-around">
+            <div class="col-12 col-lg-5 img-fluid" id="product_image">
+                <img src="./images/p3.jpg" alt="sdf" height="500" width="500">
+            </div>
+
+            <div class="col-12 col-lg-5 mt-5">
+                <h3>Samsung Galaxy S21</h3>
+                <p id="product_id">Product # 387874kkfjkf</p>
+
+                <hr>
+
+                <div class="rating-outer">
+                    <div class="rating-inner"></div>
+                </div>
+           
+
+                <hr>
+
+                <p id="product_price">$456.00</p>
+                <div class="stockCounter d-inline">
+                    <span class="btn btn-danger minus">-</span>
+
+                    <input type="number" class="form-control count d-inline" value="1" readOnly />
+
+                    <span class="btn btn-primary plus">+</span>
+                </div>
+                 <button type="button" id="cart_btn" class="btn btn-primary d-inline ml-4">Add to Cart</button>
+
+                <hr>
+
+                <p>Status: <span id="stock_status">In Stock</span></p>
+
+                <hr>
+
+                <h4 class="mt-2">Description:</h4>
+                <p>The Samsung Galaxy S21 features a 6.2" FHD+ 120Hz AMOLED display, powerful triple-lens camera, and fast 5G connectivity. Powered by an Exynos 2100/Snapdragon 888 processor with 8GB RAM and 4000mAh battery for smooth, all-day performance.</p>
+                <hr>
+                <p id="product_seller mb-3">Sold by: <strong>Amazon</strong></p>
+				
+                <div class="rating w-50"></div>
+						
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
